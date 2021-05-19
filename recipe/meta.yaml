@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 862b6e8a822ba7bfec46269c3ce84bebf4d5cae23e69aa832f03142e332eb6d5
+  sha256: 24816f5fca677531b31ec39bb789d840b1beb0d5c852fa5c799a42292a261b83
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - affine
     - bottleneck
     - click
-    - dask-core >=2.3
+    - dask-core >=2021.1,<2021.5
     - entrypoints
     - gdal >=3.1
     - geopandas >=0.8
@@ -64,3 +64,4 @@ about:
 extra:
   recipe-maintainers:
     - DirkEilander
+    - hboisgon
