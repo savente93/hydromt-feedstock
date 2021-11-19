@@ -29,13 +29,13 @@ requirements:
     - dask-core
     - entrypoints
     - gdal >=3.1
-    - geopandas >=0.8
+    - geopandas >=0.10
     - netcdf4
     - numba
     - numpy
     - openpyxl
     - pandas
-    - pyflwdir >=0.4.7
+    - pyflwdir >=0.5.3
     - pygeos
     - python >=3.8
     - rasterio
