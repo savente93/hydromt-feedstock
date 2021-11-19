@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 759a73a37a8637c9ab058401b057d7778560629184eaca37bfa3f14822349cb2
+  sha256: 8cf4e5f66bed25e5d0647ab00d33b4dc9f24be48119ebe3135abf604d9ede064
 
 build:
   number: 0
@@ -29,13 +29,13 @@ requirements:
     - dask-core
     - entrypoints
     - gdal >=3.1
-    - geopandas >=0.8
+    - geopandas >=0.10
     - netcdf4
     - numba
     - numpy
     - openpyxl
     - pandas
-    - pyflwdir >=0.4.7
+    - pyflwdir >=0.5.3
     - pygeos
     - python >=3.8
     - rasterio
