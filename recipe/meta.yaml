@@ -35,7 +35,7 @@ requirements:
     - numpy
     - openpyxl
     - pandas
-    - pyflwdir >=0.5.3
+    - pyflwdir >=0.5.4
     - pygeos
     - python >=3.8
     - rasterio
