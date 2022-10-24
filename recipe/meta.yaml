@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 959e04b241702e6380cf8aa9b5a2477dd2b838b625b38d6302db379a67db293b
+  sha256: 01f558ff4218757d2608732ba5ca4a632341875f6c162f52670eef6a017a0d93
 
 build:
   number: 0
