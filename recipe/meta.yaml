@@ -21,12 +21,12 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.8
+    - python >=3.9
   run:
     - affine
     - bottleneck
     - click
-    - dask-core
+    - dask
     - entrypoints
     - gdal >=3.1
     - geopandas >=0.10
@@ -36,15 +36,16 @@ requirements:
     - packaging
     - pandas
     - pyflwdir >=0.5.4
-    - pygeos
     - pyproj
-    - python >=3.8
+    - python >=3.9
     - rasterio
     - requests
     - rioxarray
     - scipy
-    - shapely
+    - shapely >=2.0.0
+    - universal_pathlib
     - xarray
+    - xmltodict
     - zarr
 
 test:
