@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 01f558ff4218757d2608732ba5ca4a632341875f6c162f52670eef6a017a0d93
+  sha256: fc40c34129123adc66e5d04d08e7327052e1dc96b1bef3d2d7d028aa32ee6a3f
 
 build:
   number: 0
@@ -21,12 +21,12 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.8
+    - python >=3.9
   run:
     - affine
     - bottleneck
     - click
-    - dask-core
+    - dask
     - entrypoints
     - gdal >=3.1
     - geopandas >=0.10
@@ -36,15 +36,16 @@ requirements:
     - packaging
     - pandas
     - pyflwdir >=0.5.4
-    - pygeos
     - pyproj
-    - python >=3.8
+    - python >=3.9
     - rasterio
     - requests
     - rioxarray
     - scipy
-    - shapely
+    - shapely >=2.0.0
+    - universal_pathlib
     - xarray
+    - xmltodict
     - zarr
 
 test:
