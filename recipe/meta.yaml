@@ -28,6 +28,7 @@ requirements:
     - click
     - dask
     - entrypoints
+    - fsspec
     - gdal >=3.1
     - geopandas >=0.10
     - netcdf4
