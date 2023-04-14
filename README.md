@@ -1,11 +1,11 @@
-About hydromt
-=============
+About hydromt-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydromt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/hydromt/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydromt-feedstock/blob/main/LICENSE.txt)
 
 Summary: HydroMT: Build and analyze models like a data-wizard!
 
