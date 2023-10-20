@@ -34,7 +34,6 @@ requirements:
     - numba
     - numpy >=1.20
     - netcdf4
-    - openpyxl
     - packaging
     - pandas
     - pyflwdir >=0.5.4
@@ -51,7 +50,6 @@ requirements:
     - universal_pathlib
     - xarray
     - xmltodict
-    - xugrid
     - zarr
 test:
   imports:
