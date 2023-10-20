@@ -29,28 +29,29 @@ requirements:
     - dask
     - entrypoints
     - fsspec
-    - fiona ==1.8.22
-    - gdal >=3.1
     - geopandas >=0.10
-    - netcdf4
-    - numpy >=1.20
+    - mercantile
     - numba
+    - numpy >=1.20
     - openpyxl
     - packaging
     - pandas
     - pyflwdir >=0.5.4
     - pyproj
     - python >=3.9
+    - pyyaml
     - rasterio
     - requests
     - rioxarray
     - scipy
     - shapely >=2.0.0
+    - tomli
+    - tomli-w
     - universal_pathlib
     - xarray
     - xmltodict
+    - xugrfid
     - zarr
-
 test:
   imports:
     - hydromt
