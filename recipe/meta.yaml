@@ -33,6 +33,7 @@ requirements:
     - mercantile
     - numba
     - numpy >=1.20
+    - netcdf4
     - openpyxl
     - packaging
     - pandas
