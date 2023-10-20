@@ -50,7 +50,7 @@ requirements:
     - universal_pathlib
     - xarray
     - xmltodict
-    - xugrfid
+    - xugrid
     - zarr
 test:
   imports:
