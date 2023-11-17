@@ -49,6 +49,9 @@ requirements:
     - tomli-w
     - universal_pathlib
     - xarray
+    - pydantic ~=2.4
+    - pystac
+    - pyogrio >=0.6
     - xmltodict
     - zarr
 test:
