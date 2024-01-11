@@ -11,7 +11,7 @@ source:
   sha256: e96bb11acc0c32b4ab0b7448290d96fb168b3099ef064fa4cdb6ea9d16998608
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - hydromt = hydromt.cli.main:main
@@ -27,17 +27,20 @@ requirements:
     - bottleneck
     - click
     - dask
-    - entrypoints
     - fsspec
     - geopandas >=0.10
+    - importlib_metadata
     - mercantile
+    - netcdf4
     - numba
     - numpy >=1.20
-    - netcdf4
     - packaging
     - pandas
+    - pydantic ~=2.4
     - pyflwdir >=0.5.4
+    - pyogrio >=0.6
     - pyproj
+    - pystac
     - python >=3.9
     - pyyaml
     - rasterio
@@ -47,11 +50,8 @@ requirements:
     - shapely >=2.0.0
     - tomli
     - tomli-w
-    - universal_pathlib
+    - universal_pathlib <2.0
     - xarray
-    - pydantic ~=2.4
-    - pystac
-    - pyogrio >=0.6
     - xmltodict
     - zarr
 test:
