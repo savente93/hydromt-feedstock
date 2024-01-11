@@ -27,17 +27,20 @@ requirements:
     - bottleneck
     - click
     - dask
-    - importlib_metadata
     - fsspec
     - geopandas >=0.10
+    - importlib_metadata
     - mercantile
+    - netcdf4
     - numba
     - numpy >=1.20
-    - netcdf4
     - packaging
     - pandas
+    - pydantic ~=2.4
     - pyflwdir >=0.5.4
+    - pyogrio >=0.6
     - pyproj
+    - pystac
     - python >=3.9
     - pyyaml
     - rasterio
@@ -49,9 +52,6 @@ requirements:
     - tomli-w
     - universal_pathlib <2.0
     - xarray
-    - pydantic ~=2.4
-    - pystac
-    - pyogrio >=0.6
     - xmltodict
     - zarr
 test:
