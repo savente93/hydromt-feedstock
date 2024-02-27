@@ -50,7 +50,7 @@ requirements:
     - shapely >=2.0.0
     - tomli
     - tomli-w
-    - universal_pathlib <2.0
+    - universal_pathlib >1.0
     - xarray
     - xmltodict
     - zarr
