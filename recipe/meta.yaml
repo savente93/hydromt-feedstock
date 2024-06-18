@@ -52,7 +52,7 @@ requirements:
     - tomli
     - tomli-w
     - universal_pathlib <0.2
-    - xarray
+    - xarray <=2024.3.0
     - xmltodict
     - zarr
 test:
