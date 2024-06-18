@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.9
+    - python >=3.9, <3.12
   run:
     - affine
     - bottleneck
@@ -33,7 +33,7 @@ requirements:
     - mercantile
     - netcdf4
     - numba
-    - numpy >=1.20
+    - numpy >=1.20, <2
     - packaging
     - pandas
     - pydantic ~=2.4
@@ -41,7 +41,7 @@ requirements:
     - pyogrio >=0.6
     - pyproj
     - pystac
-    - python >=3.9
+    - python >=3.9, <3.12
     - pyyaml
     - rasterio
     - requests
