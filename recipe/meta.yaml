@@ -29,7 +29,7 @@ requirements:
     - dask
     - fsspec
     - geopandas >=0.10
-    - importlib_metadata
+    - importlib-metadata
     - mercantile
     - netcdf4
     - numba
@@ -52,7 +52,7 @@ requirements:
     - tomli
     - tomli-w
     - universal_pathlib >=0.2
-    - xarray ==2024.3.0
+    - xarray 
     - xmltodict
     - zarr
 test:
