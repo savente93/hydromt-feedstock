@@ -78,6 +78,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - deltares-service-account
     - savente93
     - DirkEilander
     - hboisgon
