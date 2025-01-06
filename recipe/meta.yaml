@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
   sha256: 70e5841133132029250eb2f528833323ea6cf664a782c36d6679a7544c3f9445
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - hydromt = hydromt.cli.main:main
@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.9, <3.12
+    - python {{ python_min }}
   run:
     - affine
     - bottleneck
@@ -45,7 +45,7 @@ requirements:
     - pyogrio >=0.6
     - pyproj
     - pystac
-    - python >=3.9, <3.12
+    - python >={{ python_min }},<3.12
     - pyyaml
     - rasterio
     - requests
@@ -68,6 +68,7 @@ test:
     - hydromt --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/hydromt/
