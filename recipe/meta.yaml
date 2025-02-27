@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "1.0.0" %}
+{% set version = "0.10.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 70e5841133132029250eb2f528833323ea6cf664a782c36d6679a7544c3f9445
+  sha256: b44bcb13af95fc2a76b8112c657f3af87dec3ac29a1014d84eb3afb19fc0a0c8
 
 build:
   number: 1
@@ -33,7 +33,7 @@ requirements:
     - mercantile
     - netcdf4
     - numba
-    - numpy >=1.23, <2
+    - numpy 
     - packaging
     - pandas
     - pooch
