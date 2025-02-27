@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "1.0.0" %}
+{% set version = "0.10.1" %}
 
 
 package:
@@ -33,7 +33,7 @@ requirements:
     - mercantile
     - netcdf4
     - numba
-    - numpy >=1.23, <2
+    - numpy 
     - packaging
     - pandas
     - pooch
