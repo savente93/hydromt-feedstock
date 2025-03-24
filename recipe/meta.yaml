@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "0.10.1" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: b44bcb13af95fc2a76b8112c657f3af87dec3ac29a1014d84eb3afb19fc0a0c8
+  sha256: 4cd02221d6eb94000d6746bbc812589cfd6816c14e422735f59721c5a97af7f4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - hydromt = hydromt.cli.main:main
@@ -33,19 +33,18 @@ requirements:
     - mercantile
     - netcdf4
     - numba
-    - numpy 
+    - numpy
     - packaging
     - pandas
     - pooch
-    - pyarrow <16 
+    - pyarrow
     - pydantic ~=2.4
-    - pydantic-settings
     - pydantic-settings ~=2.2
     - pyflwdir >=0.5.4
     - pyogrio >=0.6
     - pyproj
     - pystac
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }},<3.14
     - pyyaml
     - rasterio
     - requests
@@ -55,10 +54,10 @@ requirements:
     - tomli
     - tomli-w
     - universal_pathlib >=0.2
-    - xarray 
+    - xarray
     - xmltodict
     - xugrid >=0.9.0
-    - zarr
+    - zarr >=2,<3
 test:
   imports:
     - hydromt
