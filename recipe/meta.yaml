@@ -37,15 +37,14 @@ requirements:
     - packaging
     - pandas
     - pooch
-    - pyarrow <16
+    - pyarrow
     - pydantic ~=2.4
-    - pydantic-settings
     - pydantic-settings ~=2.2
     - pyflwdir >=0.5.4
     - pyogrio >=0.6
     - pyproj
     - pystac
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }},<3.14
     - pyyaml
     - rasterio
     - requests
@@ -58,7 +57,7 @@ requirements:
     - xarray
     - xmltodict
     - xugrid >=0.9.0
-    - zarr
+    - zarr>=2,<3
 test:
   imports:
     - hydromt
