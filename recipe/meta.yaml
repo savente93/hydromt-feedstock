@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 4cd02221d6eb94000d6746bbc812589cfd6816c14e422735f59721c5a97af7f4
+  sha256: 8ddfe903ba366a5e169a5e2ce064dc44af962435981e5a48cb03540c7417870c
 
 build:
   number: 0
@@ -28,6 +28,10 @@ requirements:
     - click
     - dask
     - fsspec
+    # since noarch: python doesn't allow us to do fsspec[http]
+    # we have to manually list the extra dependencies the http
+    # features of fsspec pulls in. 
+    - aiohttp !=4.0.0a0,!=4.0.0a1
     - geopandas >=0.10
     - importlib-metadata
     - mercantile
