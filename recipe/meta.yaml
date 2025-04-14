@@ -27,7 +27,7 @@ requirements:
     - bottleneck
     - click
     - dask
-    - fsspec
+    - fsspec[http]
     - geopandas >=0.10
     - importlib-metadata
     - mercantile
