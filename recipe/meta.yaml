@@ -27,7 +27,11 @@ requirements:
     - bottleneck
     - click
     - dask
-    - fsspec[http]
+    - fsspec
+    # since noarch: python doesn't allow us to do fsspec[http]
+    # we have to manually list the extra dependencies the http
+    # features of fsspec pulls in. 
+    - aiohttp !=4.0.0a0, !=4.0.0a1
     - geopandas >=0.10
     - importlib-metadata
     - mercantile
