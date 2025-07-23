@@ -1,6 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "1.1.0" %}
-
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 8ddfe903ba366a5e169a5e2ce064dc44af962435981e5a48cb03540c7417870c
+  sha256: f9cb56e54c17fbf52c01fb08011e5a887956d48e6e6595aff735fc1e3a142e6a
 
 build:
   number: 0
@@ -23,15 +22,15 @@ requirements:
     - flit
     - python {{ python_min }}
   run:
+    # since noarch: python doesn't allow us to do fsspec[http]
+    # we have to manually list the extra dependencies the http
+    # features of fsspec pulls in. 
     - affine
+    - aiohttp !=4.0.0a0,!=4.0.0a1
     - bottleneck
     - click
     - dask
     - fsspec
-    # since noarch: python doesn't allow us to do fsspec[http]
-    # we have to manually list the extra dependencies the http
-    # features of fsspec pulls in. 
-    - aiohttp !=4.0.0a0,!=4.0.0a1
     - geopandas >=0.10
     - importlib-metadata
     - mercantile
@@ -54,7 +53,7 @@ requirements:
     - requests
     - rioxarray
     - scipy
-    - shapely >=2.0.0
+    - shapely >=2.1.0
     - tomli
     - tomli-w
     - universal_pathlib >=0.2
@@ -76,6 +75,7 @@ test:
 about:
   home: https://pypi.org/project/hydromt/
   summary: 'HydroMT: Build and analyze models like a data-wizard!'
+  doc_url: https://deltares.github.io/hydromt/stable/
   dev_url: https://github.com/Deltares/hydromt
   license: MIT
   license_file: LICENSE
@@ -87,3 +87,4 @@ extra:
     - savente93
     - DirkEilander
     - hboisgon
+    - dalmijn
